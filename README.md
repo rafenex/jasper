@@ -1,5 +1,5 @@
 # jasper!
-- API para gerar relatório de um arquivo criado no Jasper
+- Projeto para gerar arquivo em PDF ou HTML de um relatório criado no Jasper com dados do Mysql
 - Jasper
 - Mysql
 - Spring Data
