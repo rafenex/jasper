@@ -1,0 +1,16 @@
+package br.com.aula.jasperreport.entity;
+
+import javax.persistence.Entity;
+
+import lombok.Data;
+
+@Data
+@Entity
+public class Funcionario {
+	
+	private Integer id;
+	private String nome;
+	private String designacao;
+	private Double salario;
+
+}

@@ -1,0 +1,33 @@
+package br.com.aula.jasperreport.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.aula.jasperreport.entity.Funcionario;
+import br.com.aula.jasperreport.repository.FuncionarioRepository;
+
+@RestController
+@RequestMapping
+public class Jasper {
+	
+	@Autowired
+	private FuncionarioRepository repository;
+	
+	@GetMapping("/getFuncionarios")
+	private List<Funcionario> getFuncionarios(){
+		return repository.findAll();		
+		
+	}
+	
+	@GetMapping("/report/{format}")
+	private String generateReport(@PathVariable String format){
+		return repository.findAll();		
+		
+	}
+
+}

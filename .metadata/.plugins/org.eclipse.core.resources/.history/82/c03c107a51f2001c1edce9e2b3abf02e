@@ -1,0 +1,14 @@
+package br.com.aula.jasperreport.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import br.com.aula.jasperreport.repository.FuncionarioRepository;
+
+@Service
+public class ReportService {
+	
+	@Autowired
+	private FuncionarioRepository repository;
+
+}

@@ -1,0 +1,24 @@
+package br.com.aula.jasperreport.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Data
+@Entity
+@Table(name = "TB_FUNCIONARIO")
+public class Funcionario {
+	
+	@Id
+	private Integer id;
+	@Column
+	private String nome;
+	@Column
+	private String designacao;
+	@Column
+	private Double salario;
+
+}
